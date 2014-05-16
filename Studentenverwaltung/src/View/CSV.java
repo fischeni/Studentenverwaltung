@@ -73,9 +73,9 @@ public class CSV {
 				value ="";
 				for (int j=0;j<list.get(i).size();j++)
 				{
-					value= value + list.get(i).get(j);
+					value= value + list.get(i).get(j) + ";";
 				}
-				fw.write(value+"⁄n");
+				fw.write(value+"\n");
 			}
 			
 			fw.flush();
